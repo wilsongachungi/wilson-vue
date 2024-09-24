@@ -1,10 +1,10 @@
 <script setup>
 import { reactive } from 'vue'
 
-let initialState = reactive(0)
+let initialState = reactive({ count: 0 })
 </script>
 
 <template>
-    <h1>Count: {{ initialState }}</h1>
-    <button @click=" initialState ++ " ></button>
+    <h1>Count: {{ initialState.count }}</h1>
+    <button @click=" initialState.count ++ " >+</button>
 </template>
