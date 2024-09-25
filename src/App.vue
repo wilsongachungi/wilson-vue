@@ -9,7 +9,7 @@ import MyRefComponent from './components/MyRefComponent.vue';
 <template>
   <!-- <HelloWorld/>
   <MyReactiveComponent/> -->
-  <my-ref-component/>
+  <MyRefComponent/>
 </template>
 
 <style scoped>

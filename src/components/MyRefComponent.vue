@@ -1,23 +1,18 @@
 <script setup>
-import { ref } from 'vue'
+import { reactive, ref } from 'vue'
 
-let userInfo = ref({name: 'Wilson', age: '26', location: ['CIARAINI','NYERI'], isMarried: false});
+let friends = reactive([ref('Jordan'), ref('Alex'),ref('wilon')])
 </script>
 
 <template>
-    <div class="mt-5 ml-5">
-        <h1>Name: {{ userInfo.name }}</h1>
-        <h1>Age: {{ userInfo.age }}</h1>
-        <h1>location: {{ userInfo.location }}</h1>
-        <h1>IsMarried: {{ userInfo.isMarried }}</h1>
+  
+    <h1>1.{{ friends[0] }}</h1>
+    <h1>2.{{ friends[1] }}</h1>
+    <h1>3.{{ friends[2] }}</h1>
 
-        <div>
-            <button @click="userInfo.name = 'Dadaa'">Update User Name</button> <br>
-            <button @click="userInfo.age += 10">Update User age</button><br>
-            <button @click="userInfo.isMarried = 'no'">Is married</button>
-        </div>
-
-    </div>
+    <button @click="friends[0] = '🤝'">Hand Shake</button> <br>
+    <button @click="friends[1] = '🤝'">Hand Shake</button> <br>
+    <button @click="friends[2] = '🤝'">Hand Shake</button>
 
  
 </template>
