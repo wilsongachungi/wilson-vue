@@ -2,7 +2,8 @@
 // import HelloWorld from './components/Index.vue'
 // import MyReactiveComponent from './components/MyReactiveComponent.vue';
 // import MyRefComponent from './components/MyRefComponent.vue';
-import ComputedProperty from './components/ComputedProperty.vue'
+// import ComputedProperty from './components/ComputedProperty.vue'
+import ConditionalRendering from './components/ConditionalRendering.vue';
 
 </script>
 
@@ -11,7 +12,8 @@ import ComputedProperty from './components/ComputedProperty.vue'
   <!-- <HelloWorld/>
   <MyReactiveComponent/> -->
   <!-- <MyRefComponent/> -->
-   <ComputedProperty/>
+   <!-- <ComputedProperty/> -->
+    <ConditionalRendering/>
 </template>
 
 <style scoped>
