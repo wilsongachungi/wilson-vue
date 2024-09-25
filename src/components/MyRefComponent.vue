@@ -1,15 +1,15 @@
 <script setup>
 import { ref } from 'vue'
 
-// let count = ref(0)
-
-let userName = ref('')
+let userInfo = ref({name: 'Wilson', age: '26', location: ['CIARAINI','NYERI'], isMarried: false});
 </script>
 
 <template>
-    <!-- <h1>Count: {{ count }}</h1>
-    <button @click="count++">+</button>
-    <button @click="count--">-</button> -->
-    <h1>Username: {{ userName }}</h1>
-    <button @click="userName = 'jordan'">Add user</button>
+    <div class="mt-5 ml-5">
+        <h1>Name: {{ userInfo.name }}</h1>
+        <h1>Age: {{ userInfo.age }}</h1>
+        <h1>location: {{ userInfo.location }}</h1>
+        <h1>IsMarried: {{ userInfo.isMarried }}</h1>
+    </div>
+ 
 </template>
