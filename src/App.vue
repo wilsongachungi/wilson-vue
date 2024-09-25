@@ -1,7 +1,8 @@
 <script setup>
 // import HelloWorld from './components/Index.vue'
 // import MyReactiveComponent from './components/MyReactiveComponent.vue';
-import MyRefComponent from './components/MyRefComponent.vue';
+// import MyRefComponent from './components/MyRefComponent.vue';
+import ComputedProperty from './components/ComputedProperty.vue'
 
 </script>
 
@@ -9,7 +10,8 @@ import MyRefComponent from './components/MyRefComponent.vue';
 <template>
   <!-- <HelloWorld/>
   <MyReactiveComponent/> -->
-  <MyRefComponent/>
+  <!-- <MyRefComponent/> -->
+   <ComputedProperty/>
 </template>
 
 <style scoped>
