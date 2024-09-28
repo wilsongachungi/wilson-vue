@@ -1,10 +1,12 @@
 <script setup>
-const isTrue = true
+const isTrue = false
 const isFalse = false
 </script>
 
 <template>
     <div>
-        <p v-if="false">This will show if isTrue is true</p>
+        <p v-if="isTrue">This will show if isTrue is true</p>
+        <p v-else-if="isFalse">This will show if isFalse is true</p>
+        <p v-else>this will show if neither is true nor isFalse is true</p>
     </div>
 </template>
