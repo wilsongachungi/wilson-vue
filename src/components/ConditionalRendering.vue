@@ -1,12 +1,11 @@
 <script setup>
-const isTrue = false
-const isFalse = false
+import { ref } from 'vue'
+let isVisible = ref(false)
 </script>
 
 <template>
     <div>
-        <p v-if="isTrue">This will show if isTrue is true</p>
-        <p v-else-if="isFalse">This will show if isFalse is true</p>
-        <p v-else>this will show if neither is true nor isFalse is true</p>
+       <p v-show="isVisible">This paragraph will be seen or hidden depending with the value of isVisible</p>
+       <button @click="isVisible = !isVisible">Toggle visibility</button>
     </div>
 </template>
