@@ -1,15 +1,14 @@
 <script setup>
 import { ref } from 'vue';
 
-const isActive = ref(false)
+let password = ref(0)
 
 </script>
 
 <template>
   
-    <div v-if="isActive">
-        <h1>My Blog Post</h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam error obcaecati rerum fugit quidem iusto vero repudiandae. Id, assumenda! Porro.
-    </div>
-    <button @click="isActive = !isActive">Toggle button</button>
+    <p v-if="password.length > 8">Strong password</p>
+    <p v-else-if="password.length < 8">Weak password</p>
+    <p v-else>Please enter your password</p>
+    
 </template>

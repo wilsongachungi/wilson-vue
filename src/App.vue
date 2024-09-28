@@ -3,8 +3,8 @@
 // import MyReactiveComponent from './components/MyReactiveComponent.vue';
 // import MyRefComponent from './components/MyRefComponent.vue';
 // import ComputedProperty from './components/ComputedProperty.vue'
-import ConditionalRendering from './components/ConditionalRendering.vue';
-
+// import ConditionalRendering from './components/ConditionalRendering.vue';
+import IterationComponent from './components/IterationComponent.vue';
 </script>
 
 
@@ -13,7 +13,8 @@ import ConditionalRendering from './components/ConditionalRendering.vue';
   <MyReactiveComponent/> -->
   <!-- <MyRefComponent/> -->
    <!-- <ComputedProperty/> -->
-    <ConditionalRendering/>
+    <!-- <ConditionalRendering/> -->
+     <IterationComponent/>
 </template>
 
 <style scoped>
