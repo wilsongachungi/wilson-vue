@@ -5,7 +5,8 @@ import './index.css';
 // import MyRefComponent from './components/MyRefComponent.vue';
 // import ComputedProperty from './components/ComputedProperty.vue'
 // import ConditionalRendering from './components/ConditionalRendering.vue';
-import IterationComponent from './components/IterationComponent.vue';
+// import IterationComponent from './components/IterationComponent.vue';
+import StaticPropsComponent from './components/StaticPropsComponent.vue';
 </script>
 
 
@@ -15,7 +16,8 @@ import IterationComponent from './components/IterationComponent.vue';
   <!-- <MyRefComponent/> -->
    <!-- <ComputedProperty/> -->
     <!-- <ConditionalRendering/> -->
-     <IterationComponent/>
+     <!-- <IterationComponent/> -->
+      <StaticPropsComponent name="wilson"/>
 </template>
 
 <style scoped>
