@@ -46,6 +46,9 @@ const complexGamesObject = ref(
     <ul v-for="(game, index) in complexGamesObject" :key="index">
            <!-- getting all the objects -->
         <li>{{ game }}</li>
+        <br/>
+        <!-- getting single value from an object -->
+         <li v-for="(property, i) in game" :key="i">{{ property }}</li>
     </ul>
  
    
