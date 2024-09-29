@@ -43,13 +43,11 @@ const complexGamesObject = ref(
 </script>
 
 <template>
-    <ul v-for="(game, index) in complexGamesObject" :key="index">
-           <!-- getting all the objects -->
-        <li>{{ game }}</li>
-        <br/>
-        <!-- getting single value from an object -->
-         <li v-for="(property, i) in game" :key="i">{{ property }}</li>
+    <ul v-for="({title, genre, platform, releaseDate}, index) in complexGamesObject" :key="index">
+   <li>{{ title }}</li>
+   <li>{{ genre }}</li>
+   <li>{{ platform }}</li>
+   <li>{{ publicationYear }}</li>
+   <li>{{ releaseDate }}</li>
     </ul>
- 
-   
 </template>
