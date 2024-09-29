@@ -2,29 +2,51 @@
 import { ref } from 'vue'
 let peoples = ref(['wilson', 'john', 'damaris'])
 
-const movies = ref([
-    [
-        "Inception",
-        "The Shawshank Redemption",
-        "The Dark Knight"
-    ],
-    [
-        "Pulp Fiction",
-        "The Godfather",
-        "Forrest Gump"
-    ],
-    [
-        "The Matrix",
-        "Fight Club",
-        "The Lord of the Rings: The Fellowship of the Ring"
-    ]
-])
+const complexGamesObject = ref(
+    {
+        "game1": {
+            "title": "The Lost Kingdom",
+            "genre": "Action-Adventure",
+            "platform": "PC, PS5, Xbox Series X",
+            "releaseDate": "2023-10-15"
+        },
+        "game2": {
+            "title": "Galactic Wars",
+            "genre": "Sci-Fi Shooter",
+            "platform": "PC, Xbox Series X, PS5",
+            "releaseDate": "2024-03-22"
+        },
+        "game3": {
+            "title": "Mystic Realms",
+            "genre": "RPG",
+            "platform": "Nintendo Switch, PC",
+            "releaseDate": "2023-07-11"
+        },
+        "game4": {
+            "title": "Speed Legends",
+            "genre": "Racing",
+            "platform": "PS5, Xbox Series X",
+            "releaseDate": "2024-01-05"
+        },
+        "game5": {
+            "title": "Survivor's Quest",
+            "genre": "Survival Horror",
+            "platform": "PC, PS5, Xbox Series X",
+            "releaseDate": "2023-12-10"
+        }
+    }
+
+
+)
 
 
 </script>
 
 <template>
-<ul v-for="(movie, i) in movies" key="i">
-    <li v-for="(m, index) in movie" key="index">{{ m }}</li>
-</ul>
+    <ul v-for="(game, index) in complexGamesObject" :key="index">
+           <!-- getting all the objects -->
+        <li>{{ game }}</li>
+    </ul>
+ 
+   
 </template>
