@@ -1,23 +1,43 @@
 <script setup>
 import './index.css';
-// import HelloWorld from './components/Index.vue'
-// import MyReactiveComponent from './components/MyReactiveComponent.vue';
-// import MyRefComponent from './components/MyRefComponent.vue';
-// import ComputedProperty from './components/ComputedProperty.vue'
-// import ConditionalRendering from './components/ConditionalRendering.vue';
-// import IterationComponent from './components/IterationComponent.vue';
+import { ref } from 'vue';
+
+// Defining reactive variables
+const firstName = ref('Wilson')
+const lastName = ref('WebDev')
+const MyFavoriteNumber = ref(7)
+
+// Importing your components
 import StaticPropsComponent from './components/StaticPropsComponent.vue';
+import DynamicPropsComponent from './components/DynamicPropsComponent.vue';
+import ChangingValueProps from './components/ChangingValueProps.vue';
+import PropsValidation from './components/PropsValidation.vue';
+import ComplexProps from './components/ComplexProps.vue';
 </script>
 
-
 <template>
-  <!-- <HelloWorld/>
-  <MyReactiveComponent/> -->
-  <!-- <MyRefComponent/> -->
-   <!-- <ComputedProperty/> -->
-    <!-- <ConditionalRendering/> -->
-     <!-- <IterationComponent/> -->
-      <StaticPropsComponent name="wilson"/>
+  <!-- Static and Dynamic Props Components -->
+  <StaticPropsComponent name="Wilson" />
+  <DynamicPropsComponent :firstName="firstName" :lastName="lastName" />
+
+  <hr>
+
+  <!-- Changing Value Props Component -->
+  <ChangingValueProps :MyFavoriteNumber="MyFavoriteNumber" />
+  <hr>
+  <PropsValidation fullName="wilson" :age="25" />
+  <hr>
+  <ComplexProps :friends="['alex', 'john', 'daidai']" userInfo="{name: 'alex', age:20, location: ['ciaraini','nyeri']}" />
+  <hr>
+  <ul>
+    <li v-for="(friend, index) in friends" :key="index">
+      {{ friends }}
+    </li>
+    <li v-for="(friend, index) in friends" :key="index">
+      {{ friends }}
+    </li>
+
+  </ul>
 </template>
 
 <style scoped>
