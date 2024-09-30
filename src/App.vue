@@ -27,17 +27,8 @@ import ComplexProps from './components/ComplexProps.vue';
   <hr>
   <PropsValidation fullName="wilson" :age="25" />
   <hr>
-  <ComplexProps :friends="['alex', 'john', 'daidai']" userInfo="{name: 'alex', age:20, location: ['ciaraini','nyeri']}" />
-  <hr>
-  <ul>
-    <li v-for="(friend, index) in friends" :key="index">
-      {{ friends }}
-    </li>
-    <li v-for="(friend, index) in friends" :key="index">
-      {{ friends }}
-    </li>
+  <ComplexProps :friends="['alex', 'john', 'daidai']" :userInfo="{name: 'alex', age:20, location: ['ciaraini','nyeri']}" />
 
-  </ul>
 </template>
 
 <style scoped>
