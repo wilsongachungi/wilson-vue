@@ -13,6 +13,7 @@ import DynamicPropsComponent from './components/DynamicPropsComponent.vue';
 import ChangingValueProps from './components/ChangingValueProps.vue';
 import PropsValidation from './components/PropsValidation.vue';
 import ComplexProps from './components/ComplexProps.vue';
+import CustomValidator from './components/CustomValidator.vue';
 </script>
 
 <template>
@@ -28,6 +29,8 @@ import ComplexProps from './components/ComplexProps.vue';
   <PropsValidation fullName="wilson" :age="25" />
   <hr>
   <ComplexProps :friends="['alex', 'john', 'daidai']" :userInfo="{name: 'alex', age:20, location: ['ciaraini','nyeri']}" />
+  <hr>
+  <CustomValidator name="wilson" :age="26" password="impossiblePassword"/>
 
 </template>
 
