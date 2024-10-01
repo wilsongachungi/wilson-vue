@@ -1,5 +1,10 @@
 <script setup>
-defineProps(['studentName', 'studentAge', 'studentLocation'])
+import {inject} from 'vue'
+
+const studentName = inject('studentName')
+const studentAge = inject('studentAge')
+const studentLocation = inject('studentLocation')
+
 </script>
 
 <template>

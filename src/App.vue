@@ -1,15 +1,17 @@
 <script setup>
 
 import SchoolComponent from './components/SchoolComponent.vue';
+import { provide } from 'vue'
 
- const studentName = 'alex'
- const studentAge = 20
- const studentLocation = ['ciaraini','Nyeri']
+provide('studentName', 'alex')
+provide('studentAge', '26')
+provide('studentLocation', ['ciaraini','nyeri'])
+
 </script>
 
 <template>
 
-  <SchoolComponent :studentName="studentName" :studentAge="studentAge" :studentLocation="studentLocation" />
+  <SchoolComponent />
  
 </template>
 
