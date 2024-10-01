@@ -2,20 +2,16 @@
 import './index.css';
 import { ref } from 'vue';
 
-import FormComponent from './components/FormComponent.vue';
-
-const formHandler = (username, email, password) => {
-  console.log('username', username);
-  console.log('email', email);
-  console.log('password', password);
-}
+import SlotComponent from './components/SlotComponent.vue';
 
 </script>
 
 <template>
 
+  <SlotComponent>
+    <h1>Content</h1>
+  </SlotComponent>
 
- <FormComponent  @userInfo="formHandler"/>
 
 </template>
 
