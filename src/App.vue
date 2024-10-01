@@ -2,18 +2,20 @@
 import './index.css';
 import { ref } from 'vue';
 
+import FormComponent from './components/FormComponent.vue';
 
-import ComponentEvent from './components/ComponentEvent.vue';
+const formHandler = (username, email, password) => {
+  console.log('username', username);
+  console.log('email', email);
+  console.log('password', password);
+}
 
-let count = ref(0)
 </script>
 
 <template>
 
 
-  <h1>Count: {{ count }}</h1> 
-  
-<ComponentEvent @incrementCounter="count++"/>
+ <FormComponent  @userInfo="formHandler"/>
 
 </template>
 
