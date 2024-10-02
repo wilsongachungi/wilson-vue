@@ -1,13 +1,13 @@
 <script setup>
 
-import { ref } from 'vue'
-import BasicComponent from './components/BasicComponent.vue';
+import MultipleSources from './components/MultipleSources.vue';
+
 
 </script>
 
 <template>
 
-    <BasicComponent/>
+<MultipleSources/>
  
 </template>
 
